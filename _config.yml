@@ -25,15 +25,15 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 魅族内核团队
+title : 
 tagline: 致力于打造更好的 Linux 产品
 contacts_list: true
 author :
-  name : 魅族内核团队
-  email : patchwork@meizu.com
-  github : meizuosc
+  name : 猪蹄宝宝的博客n(*≧▽≦*)n
+  email : 2427303995@qq.com
+  github : gadfly3173
   twitter :
-  weibo : mzkernel
+  weibo : 
   v2ex :
   googleplus :
   feedburner :
@@ -46,7 +46,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://kernel.meizu.com
+production_url : https://gadfly3173.github.io
 cdn_url :
 
 projects: false
@@ -112,7 +112,7 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : mzkernel
+      short_name : 
     disqus :
       short_name :
     livefyre :
@@ -130,15 +130,15 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : baidu
+    provider : 
     baidu :
-      tracking_id : 231c363d96e8f15c54974a34c26ca7c0
+      tracking_id : 
     google : 
       tracking_id :
     getclicky :
       site_id : 
     mixpanel :
-      token : '_MIXPANEL_TOKEN_'
+      token : 
 
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
