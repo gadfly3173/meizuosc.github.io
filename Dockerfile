@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Falcon wuzhangjin@gmail.com
+MAINTAINER gadfly 2427303995@qq.com
 
 RUN sed -i -e "s/archive.ubuntu.com/mirrors.163.com/g" /etc/apt/sources.list
 
