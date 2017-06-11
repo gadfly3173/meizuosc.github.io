@@ -111,7 +111,6 @@ JB :
   #
   comments :
     provider : 
-    duoshuo :
       short_name : 
     disqus :
       short_name :
