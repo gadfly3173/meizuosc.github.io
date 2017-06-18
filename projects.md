@@ -7,4 +7,8 @@ comments: true
 ---
 
 ## 我的GitHub
-   [https://github.com/gadfly3173](https://github.com/gadfly3173)
+   [gadfly3173](https://github.com/gadfly3173)
+
+## 一些做得还可以的小东西
+   [高考倒计时](https://github.com/gadfly3173/gaokaoClock)
+   未完待续。。。
