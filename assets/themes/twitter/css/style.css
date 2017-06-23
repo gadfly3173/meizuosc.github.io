@@ -746,9 +746,9 @@ pre code {
   behavior: url({{ ASSET_DIR }}/css/PIE.htc);
 }
 #ds-reset .ds-avatar img:hover {
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg) !important;
+  -moz-transform: rotateZ(360deg) !important;
+  transform: rotateZ(360deg) !important;
 }
 #ds-reset .ds-powered-by, #ds-reset .ds-meta {
   display: none !important;
