@@ -740,9 +740,9 @@ pre code {
   -webkit-border-radius: 27px !important;
   -moz-border-radius: 27px !important;
   border-radius: 27px !important;
-  -webkit-transition: -webkit-transform 0.4s ease-out;
-  -moz-transition: -moz-transform 0.4s ease-out;
-  transition: transform 0.4s ease-out;
+  -webkit-transition: -webkit-transform 0.4s ease-out !important;
+  -moz-transition: -moz-transform 0.4s ease-out !important;
+  transition: transform 0.4s ease-out !important;
   behavior: url({{ ASSET_DIR }}/css/PIE.htc);
 }
 #ds-reset .ds-avatar img:hover {
