@@ -740,15 +740,18 @@ pre code {
   -webkit-border-radius: 27px !important;
   -moz-border-radius: 27px !important;
   border-radius: 27px !important;
-  -webkit-transition: -webkit-transform 0.4s ease-out !important;
-  -moz-transition: -moz-transform 0.4s ease-out !important;
-  transition: transform 0.4s ease-out !important;
+  -webkit-transition: -webkit-transform 2s ease-out;
+	-moz-transition: -moz-transform 2s ease-out;
+	-o-transition: -o-transform 2s ease-out;
+	-ms-transition: -ms-transform 2s ease-out;
   behavior: url({{ ASSET_DIR }}/css/PIE.htc);
 }
 #ds-reset .ds-avatar img:hover {
-  -webkit-transform: rotateZ(360deg) !important;
-  -moz-transform: rotateZ(360deg) !important;
-  transform: rotateZ(360deg) !important;
+	-webkit-transform: rotateZ(360deg);
+	-moz-transform: rotateZ(360deg);
+	-o-transform: rotateZ(360deg);
+	-ms-transform: rotateZ(360deg);
+	transform: rotateZ(360deg);
 }
 #ds-reset .ds-powered-by, #ds-reset .ds-meta {
   display: none !important;
