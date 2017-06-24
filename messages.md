@@ -1,22 +1,22 @@
 ---
 layout: page
 title: "留言板"
-description: "猪蹄宝宝的博客n(*≧▽≦*)n"
+description: "留言板"
 group: navigation
+comments: true
 ---
-{% include JB/setup %}
 
-### 打赏
-![微信](/images/donate/微信.png =250x)
-![支付宝](/images/donate/支付鸨.jpg =250x)
+## 打赏
+   ![donate](/images/donate/donate.png)
 
-### 留言板
-<div id="disqus_thread"></div>
+## 留言板
+   <div id="disqus_thread"></div>
 <script>
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
 /*
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
