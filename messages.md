@@ -30,4 +30,4 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>请开启浏览器的JavaScript功能或使用支持JavaScript功能的浏览器来使用<a href="https://disqus.com/?ref_noscript">由Disqus提供的评论功能</a></noscript>
