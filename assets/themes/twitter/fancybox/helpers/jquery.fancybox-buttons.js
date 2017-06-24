@@ -22,7 +22,7 @@
 		defaults : {
 			skipSingle : false, // disables if gallery contains single image
 			position   : 'top', // 'top' or 'bottom'
-			tpl        : '<div id="fancybox-buttons"><ul><li><a class="btnPrev" title="Previous" href="javascript:;"></a></li><li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li><li><a class="btnNext" title="下一张" href="javascript:;"></a></li><li><a class="btnToggle" title="切换大小" href="javascript:;"></a></li><li><a class="btnClose" title="关闭" href="javascript:;"></a></li></ul></div>'
+			tpl        : '<div id="fancybox-buttons"><ul><li><a class="btnPrev" title="上一张" href="javascript:;"></a></li><li><a class="btnPlay" title="播放幻灯片" href="javascript:;"></a></li><li><a class="btnNext" title="下一张" href="javascript:;"></a></li><li><a class="btnToggle" title="切换大小" href="javascript:;"></a></li><li><a class="btnClose" title="关闭" href="javascript:;"></a></li></ul></div>'
 		},
 
 		list : null,
