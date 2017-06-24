@@ -735,23 +735,24 @@ pre code {
   position: relative;
   behavior: url({{ ASSET_DIR }}/css/PIE.htc);
 }
-#ds-reset .ds-avatar img {
-  position: relative;
-  -webkit-border-radius: 27px !important;
-  -moz-border-radius: 27px !important;
-  border-radius: 27px !important;
+.ds-avatar{
+  float: left;
+  /*position:absolute;
+  left:0px;
+  height: 100px !important;*/
+  margin-bottom: 20px;
+  -webkit-border-radius: 150px !important;
+  -moz-border-radius: 150px !important;
+  border-radius: 150px !important;
   -webkit-transition: -webkit-transform 2s ease-out;
-	-moz-transition: -moz-transform 2s ease-out;
-	-o-transition: -o-transform 2s ease-out;
-	-ms-transition: -ms-transform 2s ease-out;
-  behavior: url({{ ASSET_DIR }}/css/PIE.htc);
+  -moz-transition: -moz-transform 2s ease-out;
+  transition: transform 2s ease-out;
+  /*behavior: url({{ ASSET_DIR }}/css/PIE.htc);*/
 }
-#ds-reset .ds-avatar img:hover {
-	-webkit-transform: rotateZ(360deg);
-	-moz-transform: rotateZ(360deg);
-	-o-transform: rotateZ(360deg);
-	-ms-transform: rotateZ(360deg);
-	transform: rotateZ(360deg);
+.ds-avatar:hover {
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 #ds-reset .ds-powered-by, #ds-reset .ds-meta {
   display: none !important;

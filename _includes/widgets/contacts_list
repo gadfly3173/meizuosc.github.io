@@ -4,9 +4,9 @@
 <div id="contacts-list">
   <div id="desc">
   {% if author.avatar contains 'http' %}
-    <img src="{{ author.avatar }}" class="ds-avatar" alt="{{ author.name }} bio photo">
+    <img src="{{ author.avatar }}" class="ds-avatar" height="100px" width="100px" alt="{{ author.name }} bio photo">
   {% else %}
-    <img src="{{ site.url }}/images/people/{% if author.avatar %}{{ author.avatar }}{% else %}bio-photo.jpg{% endif %}" class="ds-avatar" alt="{{ author.name }} bio photo">
+    <img src="{{ site.url }}/images/people/{% if author.avatar %}{{ author.avatar }}{% else %}bio-photo.jpg{% endif %}" height="100px" width="100px" class="ds-avatar" alt="{{ author.name }} bio photo">
   {% endif %}
   <h2 id="name">{{ author.nickname }}</h2>
   <p class="author-bio"> {{ author.bio }} </p>
@@ -29,7 +29,7 @@
   {% endif %}
   <!--
   {% if author.wechat %}
-  <a href="http://weibo.com/{{ author.wechat }}" target="_blank" title="微信">
+  <a href="http://u.wechat.com/{{ author.wechat }}" target="_blank" title="微信">
     <i class="icon-large icon-fixed-width icon-wechat"></i>
   </a>
   {% endif %}
