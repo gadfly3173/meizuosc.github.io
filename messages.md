@@ -7,10 +7,8 @@ group: navigation
 {% include JB/setup %}
 
 ### 打赏
-<figure class="half">
-     <img src="/images/donate/微信.png" width="200px" />
-     <img src="/images/donate/支付鸨.jpg" width="200px" />
-</figure>
+![微信](/images/donate/微信.png =250x)
+![支付宝](/images/donate/支付鸨.jpg =250x)
 
 ### 留言板
 <div id="disqus_thread"></div>
