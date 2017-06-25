@@ -195,9 +195,9 @@ a.gitment-comment-name:visited {
 }
 
 .gitment-editor-tabs {
-  /*margin-bottom: -1px;
-  margin-left: -1px;*/
-  float: middle;
+  margin-bottom: 5px;
+  margin-left: -1px;
+  /*float: middle;*/
 }
 
 .gitment-editor-tab {
