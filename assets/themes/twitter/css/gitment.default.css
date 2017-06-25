@@ -393,7 +393,8 @@ a.gitment-editor-footer-tip:hover {
 .gitment-comments-init-btn {
   color: #fff;
   background-color: #00BCD4;
-  float: middle;
+  /*float: middle;*/
+  padding:10px 0 0;
   /*position: relative;*/
   display: inline-block;
   padding: 7px 13px;
