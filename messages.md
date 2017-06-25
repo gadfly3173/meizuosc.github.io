@@ -5,26 +5,18 @@ description: "留言板"
 group: navigation
 comments: true
 ---
-
 ## 留言板
-   <div id="disqus_thread"></div>
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://gadfly3173.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+var gitment = new Gitment({
+  owner: 'gadfly3173',
+  repo: 'comments_for_blog',
+  oauth: {
+    client_id: '1d74d093270dc8149157',
+    client_secret: '11828cfbb6455dde70ddc074eb3e64743e748064',
+  },
+})
+gitment.render('container')
 </script>
-<noscript>请开启浏览器的JavaScript功能或使用支持JavaScript功能的浏览器来使用<a href="https://disqus.com/?ref_noscript">由Disqus提供的评论功能</a></noscript>
