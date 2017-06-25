@@ -6,9 +6,6 @@ group: navigation
 comments: true
 ---
 
-## 打赏
-   ![donate](/images/donate/donate.png)
-
 ## 留言板
    <div id="disqus_thread"></div>
 <script>

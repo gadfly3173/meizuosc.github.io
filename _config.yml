@@ -100,7 +100,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
-  messages_path :
+  messages_path : /messages.html
   about_path : /about.html
   project_path: /projects.html
   

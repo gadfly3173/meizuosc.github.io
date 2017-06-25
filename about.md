@@ -18,3 +18,5 @@ Fork自[魅族内核团队](https://github.com/meizuosc/meizuosc.github.io)
 
 * 还没有，等会再说
 
+### 打赏
+   ![donate](/images/donate/donate.png)
