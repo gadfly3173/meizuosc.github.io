@@ -2852,7 +2852,7 @@ function renderHeader(_ref, instance) {
     return reaction.content === 'heart' && reaction.user.login === user.login;
   });
   likeButton.className = 'gitment-header-like-btn';
-  likeButton.innerHTML = '\n    ' + _icons.heart + '\n    ' + (likedReaction ? '不喜欢' : '点赞') + '\n    ' + (meta.reactions && meta.reactions.heart ? ' \u2022 <strong>' + meta.reactions.heart + '</strong> 已点赞' : '') + '\n  ';
+  likeButton.innerHTML = '\n    ' + _icons.heart + '\n    ' + (likedReaction ? '取消' : '点赞') + '\n    ' + (meta.reactions && meta.reactions.heart ? ' \u2022 <strong>' + meta.reactions.heart + '</strong> 已点赞' : '') + '\n  ';
 
   if (likedReaction) {
     likeButton.classList.add('liked');
@@ -2868,7 +2868,7 @@ function renderHeader(_ref, instance) {
   container.appendChild(likeButton);
 
   var commentsCount = document.createElement('span');
-  commentsCount.innerHTML = '\n    ' + (meta.comments ? ' \u2022 <strong>' + meta.comments + '</strong> Comments' : '') + '\n  ';
+  commentsCount.innerHTML = '\n    ' + (meta.comments ? ' \u2022 <strong>' + meta.comments + '</strong> 条评论' : '') + '\n  ';
   container.appendChild(commentsCount);
 
   var issueLink = document.createElement('a');
@@ -2908,7 +2908,7 @@ function renderComments(_ref2, instance) {
           alert(e);
         });
       };
-      initButton.innerText = 'Initialize Comments';
+      initButton.innerText = '初始化评论';
       initHint.appendChild(initButton);
       errorBlock.appendChild(initHint);
     } else {
@@ -2938,7 +2938,7 @@ function renderComments(_ref2, instance) {
     var updateDate = new Date(comment.updated_at);
     var commentItem = document.createElement('li');
     commentItem.className = 'gitment-comment';
-    commentItem.innerHTML = '\n      <a class="gitment-comment-avatar" href="' + comment.user.html_url + '" target="_blank">\n        <img class="gitment-comment-avatar-img" src="' + comment.user.avatar_url + '"/>\n      </a>\n      <div class="gitment-comment-main">\n        <div class="gitment-comment-header">\n          <a class="gitment-comment-name" href="' + comment.user.html_url + '" target="_blank">\n            ' + comment.user.login + '\n          </a>\n          commented on\n          <span title="' + createDate + '">' + createDate.toDateString() + '</span>\n          ' + (createDate.toString() !== updateDate.toString() ? ' \u2022 <span title="comment was edited at ' + updateDate + '">edited</span>' : '') + '\n          <div class="gitment-comment-like-btn">' + _icons.heart + ' ' + (comment.reactions.heart || '') + '</div>\n        </div>\n        <div class="gitment-comment-body gitment-markdown">' + comment.body_html + '</div>\n      </div>\n    ';
+    commentItem.innerHTML = '\n      <a class="gitment-comment-avatar" href="' + comment.user.html_url + '" target="_blank">\n        <img class="gitment-comment-avatar-img" src="' + comment.user.avatar_url + '"/>\n      </a>\n      <div class="gitment-comment-main">\n        <div class="gitment-comment-header">\n          <a class="gitment-comment-name" href="' + comment.user.html_url + '" target="_blank">\n            ' + comment.user.login + '\n          </a>\n          评论于\n          <span title="' + createDate + '">' + createDate.toDateString() + '</span>\n          ' + (createDate.toString() !== updateDate.toString() ? ' \u2022 <span title="编辑于 ' + updateDate + '"></span>' : '') + '\n          <div class="gitment-comment-like-btn">' + _icons.heart + ' ' + (comment.reactions.heart || '') + '</div>\n        </div>\n        <div class="gitment-comment-body gitment-markdown">' + comment.body_html + '</div>\n      </div>\n    ';
     var likeButton = commentItem.querySelector('.gitment-comment-like-btn');
     var likedReaction = commentReactions[comment.id] && commentReactions[comment.id].find(function (reaction) {
       return reaction.content === 'heart' && reaction.user.login === user.login;
@@ -2990,7 +2990,7 @@ function renderComments(_ref2, instance) {
       if (currentPage > 1) {
         var previousButton = document.createElement('li');
         previousButton.className = 'gitment-comments-page-item';
-        previousButton.innerText = 'Previous';
+        previousButton.innerText = '上一条';
         previousButton.onclick = function () {
           return instance.goto(currentPage - 1);
         };
@@ -3015,7 +3015,7 @@ function renderComments(_ref2, instance) {
       if (currentPage < pageCount) {
         var nextButton = document.createElement('li');
         nextButton.className = 'gitment-comments-page-item';
-        nextButton.innerText = 'Next';
+        nextButton.innerText = '下一条';
         nextButton.onclick = function () {
           return instance.goto(currentPage + 1);
         };
@@ -3083,11 +3083,11 @@ function renderEditor(_ref3, instance) {
     var preview = previewField.querySelector('.gitment-editor-preview');
     var content = textarea.value.trim();
     if (!content) {
-      preview.innerText = 'Nothing to preview';
+      preview.innerText = '你还没写呢(⊙o⊙)';
       return;
     }
 
-    preview.innerText = 'Loading preview...';
+    preview.innerText = '加载预览中((*゜Д゜)ゞ”';
     instance.markdown(content).then(function (html) {
       return preview.innerHTML = html;
     });
@@ -3095,17 +3095,17 @@ function renderEditor(_ref3, instance) {
 
   var submitButton = container.querySelector('.gitment-editor-submit');
   submitButton.onclick = function () {
-    submitButton.innerText = 'Submitting...';
+    submitButton.innerText = '提交中_(:з」∠)_';
     submitButton.setAttribute('disabled', true);
     instance.post(textarea.value.trim()).then(function (data) {
       textarea.value = '';
       textarea.style.height = 'auto';
       submitButton.removeAttribute('disabled');
-      submitButton.innerText = 'Comment';
+      submitButton.innerText = '评论';
     }).catch(function (e) {
       alert(e);
       submitButton.removeAttribute('disabled');
-      submitButton.innerText = 'Comment';
+      submitButton.innerText = '评论';
     });
   };
 
