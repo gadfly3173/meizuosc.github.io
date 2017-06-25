@@ -5,7 +5,7 @@ description: "留言板"
 group: navigation
 comments: true
 ---
-## 留言板
+
 <div id="container"></div>
 <link rel="stylesheet" href="/assets/themes/twitter/css/gitment.default.css">
 <script src="/assets/themes/twitter/js/gitment.browser.js"></script>
