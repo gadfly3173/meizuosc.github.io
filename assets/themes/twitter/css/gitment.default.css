@@ -204,13 +204,13 @@ a.gitment-comment-name:visited {
   padding: 0px 0px;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
+  /*text-align: center;*/
   color: #fff;
   text-decoration: none;
   background-color: #2196F3;
   border-width: 0 1px;
   border-style: solid;
-  /*border-color: transparent;*/
+  border-color: transparent;
   border-radius: 0;
 
   white-space: nowrap;
