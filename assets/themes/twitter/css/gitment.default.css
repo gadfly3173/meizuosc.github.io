@@ -89,11 +89,11 @@ a.gitment-header-issue-link,
 a.gitment-header-issue-link:visited {
   float: right;
   line-height: 30px;
-  color: #666;
+  color: #2196F3;
 }
 
 a.gitment-header-issue-link:hover {
-  color: #666;
+  color: #2196F3;
 }
 
 .gitment-comments-loading,
@@ -177,7 +177,7 @@ a.gitment-header-issue-link:hover {
 
 .gitment-comment-header {
   margin: 12px 15px;
-  color: #666;
+  color: #2196F3;
   background-color: #fff;
   border-radius: 3px;
 }
@@ -191,7 +191,7 @@ a.gitment-header-issue-link:hover {
 a.gitment-comment-name,
 a.gitment-comment-name:visited {
   font-weight: 600;
-  color: #666;
+  color: #2196F3;
 }
 
 .gitment-editor-tabs {
@@ -213,11 +213,11 @@ a.gitment-comment-name:visited {
   border-color: transparent;
   border-radius: 0;
 
-  white-space: nowrap;
+  /*white-space: nowrap;
   cursor: pointer;
   user-select: none;
 
-  outline: none;
+  outline: none;*/
 }
 
 .gitment-editor-tab.gitment-selected {
@@ -241,7 +241,7 @@ a.gitment-editor-login-link:visited {
 
 a.gitment-editor-logout-link,
 a.gitment-editor-logout-link:visited {
-  color: #666;
+  color: #2196F3;
 }
 
 a.gitment-editor-logout-link:hover {
@@ -277,7 +277,7 @@ a.gitment-editor-logout-link:hover {
   display: block !important;
   content: "Click to Expand" !important;
   text-align: center;
-  color: #666;
+  color: #2196F3;
   position: absolute;
   width: 100%;
   height: 50px;
@@ -359,7 +359,7 @@ a.gitment-editor-footer-tip {
   display: inline-block;
   padding-top: 10px;
   font-size: 12px;
-  color: #666;
+  color: #2196F3;
 }
 
 a.gitment-editor-footer-tip:hover {
