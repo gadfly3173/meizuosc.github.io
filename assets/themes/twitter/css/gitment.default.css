@@ -201,9 +201,10 @@ a.gitment-comment-name:visited {
 
 .gitment-editor-tab {
   display: inline-block;
-  padding: 11px 12px;
+  padding: 0px 0px;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
   color: #fff;
   text-decoration: none;
   background-color: #2196F3;
@@ -212,11 +213,11 @@ a.gitment-comment-name:visited {
   border-color: transparent;
   border-radius: 0;
 
-  white-space: nowrap;
+  /*white-space: nowrap;
   cursor: pointer;
   user-select: none;
 
-  outline: none;
+  outline: none;*/
 }
 
 .gitment-editor-tab.gitment-selected {
