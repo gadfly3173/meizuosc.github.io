@@ -204,7 +204,7 @@ a.gitment-comment-name:visited {
   padding: 11px 12px;
   font-size: 14px;
   line-height: 20px;
-  color: #0086b3;
+  color: #fff;
   text-decoration: none;
   background-color: transparent;
   border-width: 0 1px;
@@ -220,7 +220,7 @@ a.gitment-comment-name:visited {
 }
 
 .gitment-editor-tab.gitment-selected {
-  color: #0086b3;
+  color: #fff;
   background-color: #fff;
   border-color: #CFD8DC;
 }
