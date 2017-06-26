@@ -210,14 +210,14 @@ a.gitment-comment-name:visited {
   background-color: #2196F3;
   border-width: 0 1px;
   border-style: solid;
-  border-color: transparent;
+  /*border-color: transparent;*/
   border-radius: 0;
 
-  /*white-space: nowrap;
+  white-space: nowrap;
   cursor: pointer;
   user-select: none;
 
-  outline: none;*/
+  outline: none;
 }
 
 .gitment-editor-tab.gitment-selected {
