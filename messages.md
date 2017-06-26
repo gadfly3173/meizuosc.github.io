@@ -18,6 +18,6 @@ var gitment = new Gitment({
     client_secret: '11828cfbb6455dde70ddc074eb3e64743e748064',
   },
 })
-gitment.render('container')
+gitment.render('gitment_container')
 </script>
 <noscript>请开启浏览器的JavaScript功能或使用支持JavaScript功能的浏览器来使用由<a href="https://imsun.github.io/gitment/">Gitment</a>提供的评论功能</noscript>
