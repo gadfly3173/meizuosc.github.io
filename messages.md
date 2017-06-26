@@ -6,9 +6,9 @@ group: navigation
 comments: true
 ---
 
-<div id="container"></div>
-<link rel="stylesheet" href="/assets/themes/twitter/css/gitment.default.css">
-<script src="/assets/themes/twitter/js/gitment.browser.js"></script>
+<div id="gitment_container"></div>
+<link rel="stylesheet" href="/gitment/style/default.css">
+<script src="/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
   owner: 'gadfly3173',

@@ -204,10 +204,9 @@ a.gitment-comment-name:visited {
   padding: 11px 12px;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
-  color: #fff;
+  color: #666;
   text-decoration: none;
-  /*background: transparent;
+  background-color: transparent;
   border-width: 0 1px;
   border-style: solid;
   border-color: transparent;
@@ -217,11 +216,11 @@ a.gitment-comment-name:visited {
   cursor: pointer;
   user-select: none;
 
-  outline: none;*/
+  outline: none;
 }
 
 .gitment-editor-tab.gitment-selected {
-  color: #fff;
+  color: #333;
   background-color: #fff;
   border-color: #CFD8DC;
 }
@@ -394,9 +393,8 @@ a.gitment-editor-footer-tip:hover {
 .gitment-comments-init-btn {
   color: #fff;
   background-color: #00BCD4;
-  /*float: middle;*/
-  padding:10px 0 0;
-  /*position: relative;*/
+
+  position: relative;
   display: inline-block;
   padding: 7px 13px;
   font-size: 14px;
