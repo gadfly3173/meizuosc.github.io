@@ -201,10 +201,10 @@ a.gitment-comment-name:visited {
 
 .gitment-editor-tab {
   display: inline-block;
-  padding: 0px 0px;
+  padding: 11px 12px;
   font-size: 14px;
   line-height: 20px;
-  /*text-align: center;*/
+  text-align: center;
   color: #fff;
   text-decoration: none;
   background-color: #2196F3;
